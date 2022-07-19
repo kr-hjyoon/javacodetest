@@ -62,7 +62,7 @@
 
 ## 주요 메서드
   * getMessage()
-  * printStackTrace()+
+  * printStackTrace()
 
 
 
