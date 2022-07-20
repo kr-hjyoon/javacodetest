@@ -12,7 +12,7 @@ public class ExceptionMain
             int result = value1 + value2;
             System.out.println("data1 + data2 = "+ result);
         }catch(ArrayIndexOutOfBoundsException | NumberFormatException e ){
-            System.out.println("실행매개변수의 수가 부족하거나 숫자로 변환할수없습니다.");
+            System.out.println("실행매개변수의 수가 부족하거나 숫자로 변환 할 수 없습니다.");
 
         }catch(Exception e){
             System.out.println("Exception 발생:"+e.getMessage());
