@@ -123,3 +123,31 @@
     }
     ```
 
+## 제네릭 
+  * 클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 기법 
+      ```java
+      class Person<T>{
+        public T info; 
+      }
+      Person<String> p1 = new Person<String>();
+      Person<StringBuilder> p2 = new Person<StringBuilder>();
+      ```
+  * 왜 jeneric을 사용하는가?
+    * type safety 
+      * 잘못된 타입이 사용될수 있는 문제를 컴파일 과정에서 제거 
+      * 참조형 데이터만 올수 있다. (기본형은 X )
+        * int > Integer, double > Double, long > Long
+    * 매개변수를 통해 타입 추론이 가능시에는 생략 가능 
+      ```java
+      
+      class EmployeeInfo{
+        public int rank;
+        Employinfo( int rank ){
+            this.rank  = rank;
+      }
+      
+      class Person<T,S >
+        public T info;
+        public S id;
+      ``
+  * extends 를 이용한 타입 제한 가능    
