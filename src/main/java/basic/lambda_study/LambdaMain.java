@@ -18,9 +18,6 @@ public class LambdaMain {
         // 표준 API Function
 
         //Function<Integer, Integer>  function = (x, y) -> x+y;
-        Function<String, String>  function1 = (x,y) -> x+y;
-
-        function1.apply("hello", "wolrd");
 
 
     }
